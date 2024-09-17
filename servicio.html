@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>Zonamedik - Área Médica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #008dc7;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            color: #008dc7;
+            margin-bottom: 10px;
+        }
+
+        section .visual{
+            flex: 0 0 45%; /* La imagen ocupa el 45% del ancho del contenedor */
+            margin-left: 20px; /* Espacio entre el texto y la imagen */
+	    }
+
+        section .visual img{
+            width: 100%;
+            height: auto;
+            border-radius: 2em;
+            object-fit: cover;
+            object-position: center;
+            aspect-ratio: 16/9;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        ul li::before {
+            content: "\2022";
+            color: #008dc7;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .btn-wsp{
+			position: fixed;
+			width: 55px;
+			height: 55px;
+			line-height: 55px;
+			bottom: 30px;
+			right: 30px;
+			background: #0df053;;
+			color:#fff;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 30px;
+			box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+			z-index: 100;
+		}
+        .btn-wsp:hover{
+			text-decoration: none;
+			color: #0df053;
+			background: #fff;
+		}
+
+		
+    </style>
+</head>
+<body>
+    <a href="https://api.whatsapp.com/send?phone=593998800858" class="btn-wsp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <header>
+        
+        <h1>Área Médica</h1>
+
+    </header>
+
+    <div class="container">
+        <section id="medicina-general">
+            <h2>Medicina General</h2>
+            <ul>
+
+                <li>Consulta externa general</li>
+                <li>Control de enfermedades crónicas</li>
+                <li>Control y Toma de presión arterial</li>
+                <li>Control y Toma del azúcar (Glucosa)</li>
+                <li>Control y Toma de talla y peso</li>
+                <li>Inyectables y medicamentos</li>
+                <li>Suturas de heridas (Curaciones de heridas)</li>
+                <li>Lavado de oídos</li>
+                <li>Venoclisis o Canalización</li>
+                <li>Inhaloterapia</li>
+                <li>Certificado de buena salud general</li>
+                <li>Referencia a las distintas especialidades médicas</li>
+            </ul>
+            <div class="visual">
+                <img src="images/medGeneral.jpg" alt="" class="fit">
+            </div>
+        </section>
+
+        <section id="medicina-alternativa">
+            <h2>Medicina Alternativa</h2>
+            <ul>
+                <li>Sueroterapia</li>
+            </ul>
+            <div class="visual">
+				<img src="images/alternativa.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="pediatria">
+            <h2>Pediatría</h2>
+            <ul>
+                <li>Control de niño sano</li>
+                <li>Control del crecimiento y desarrollo</li>
+                <li>Incluyen entre otros Peso, talla, presión arterial</li>
+                <li>Desarrollo psicomotor</li>
+                <li>Consejos de alimentación, estimulación y desarrollo</li>
+            </ul>
+            <div class="visual">
+				<img src="images/pediatria.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="ginecologia-obstetricia">
+            <h2>Ginecología y Obstetricia</h2>
+            <ul>
+                <li>Controles prenatales</li>
+                <li>Control de peso durante el embarazo</li>
+                <li>Planificación Familiar y anticoncepción</li>
+                <li>Examen ginecológico</li>
+                <li>Papanicolau</li>
+                <li>Status hormonal</li>
+                <li>Normalidad anatómica y funcional</li>
+                <li>Climaterio y Postmenopausia</li>
+                <li>Realización de pruebas de embarazo, VIH y sífilis</li>
+            </ul>
+            <div class="visual">
+				<img src="images/ginecologia.jpeg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="nutricion">
+            <h2>Nutrición</h2>
+            <ul>
+                <li>Atención individual o grupal</li>
+                <li>Planes de Alimentación</li>
+                <li>Seguimiento y actualización</li>
+                <li>Actividades con énfasis en nutrición preventiva</li>
+                <li>Análisis de composición corporal / Antropometría</li>
+            </ul>
+            <div class="visual">
+				<img src="images/nutri.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="psicologia">
+            <h2>Psicología</h2>
+            <ul>
+                <li>Consulta Externa</li>
+                <li>Tratamiento Cognitivo-Conductual</li>
+                <li>Técnica TAC</li>
+                <li>Tratamientos</li>
+                <li>Terapia Grupal</li>
+                <li>Terapia Individual</li>
+            </ul>
+            <div class="visual">
+				<img src="images/psicologia.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="traumatologia-fisioterapia">
+            <h2>Traumatología - Fisioterapia</h2>
+            <ul>
+                <li>Consulta Externa</li>
+                <li>Tratamiento de lesiones</li>
+                <li>Rehabilitación física</li>
+                <li>Ejercicios terapéuticos</li>
+            </ul>
+            <div class="visual">
+				<img src="images/traumatologia.jpg" alt="" class="fit">
+			</div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Servicios Médicos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

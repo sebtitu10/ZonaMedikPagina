@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Médicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #008dc7;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        section img {
+            max-width: 200px;
+            border-radius: 8px;
+        }
+        section h2 {
+            color: #008dc7;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        ul li::before {
+            content: "\2022";
+            color: #008dc7;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Servicios Médicos</h1>
+    </header>
+
+    <div class="container">
+        <section id="medicina-general">
+            <img src="medicina-general.jpg" alt="Medicina General">
+            <div>
+                <h2>Medicina General</h2>
+                <ul>
+                    <li>Consulta externa general</li>
+                    <li>Control de enfermedades crónicas</li>
+                    <li>Control y Toma de presión arterial</li>
+                    <li>Control y Toma del azúcar (Glucosa)</li>
+                    <li>Control y Toma de talla y peso</li>
+                    <li>Inyectables y medicamentos</li>
+                    <li>Suturas de heridas (Curaciones de heridas)</li>
+                    <li>Lavado de oídos</li>
+                    <li>Venoclisis o Canalización</li>
+                    <li>Inhaloterapia</li>
+                    <li>Certificado de buena salud general</li>
+                    <li>Referencia a las distintas especialidades médicas</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="medicina-alternativa">
+            <img src="medicina-alternativa.jpg" alt="Medicina Alternativa">
+            <div>
+                <h2>Medicina Alternativa</h2>
+                <ul>
+                    <li>Sueroterapia</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="pediatria">
+            <img src="pediatria.jpg" alt="Pediatría">
+            <div>
+                <h2>Pediatría</h2>
+                <ul>
+                    <li>Control de niño sano</li>
+                    <li>Control del crecimiento y desarrollo</li>
+                    <li>Incluyen entre otros Peso, talla, presión arterial</li>
+                    <li>Desarrollo psicomotor</li>
+                    <li>Consejos de alimentación, estimulación y desarrollo</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="ginecologia-obstetricia">
+            <img src="ginecologia-obstetricia.jpg" alt="Ginecología y Obstetricia">
+            <div>
+                <h2>Ginecología y Obstetricia</h2>
+                <ul>
+                    <li>Controles prenatales</li>
+                    <li>Control de peso durante el embarazo</li>
+                    <li>Planificación Familiar y anticoncepción</li>
+                    <li>Examen ginecológico</li>
+                    <li>Papanicolau</li>
+                    <li>Status hormonal</li>
+                    <li>Normalidad anatómica y funcional</li>
+                    <li>Climaterio y Postmenopausia</li>
+                    <li>Realización de pruebas de embarazo, VIH y sífilis</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="nutricion">
+            <img src="nutricion.jpg" alt="Nutrición">
+            <div>
+                <h2>Nutrición</h2>
+                <ul>
+                    <li>Atención individual o grupal</li>
+                    <li>Planes de Alimentación</li>
+                    <li>Seguimiento y actualización</li>
+                    <li>Actividades con énfasis en nutrición preventiva</li>
+                    <li>Análisis de composición corporal / Antropometría</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="psicologia">
+            <img src="psicologia.jpg" alt="Psicología">
+            <div>
+                <h2>Psicología</h2>
+                <ul>
+                    <li>Consulta Externa</li>
+                    <li>Tratamiento Cognitivo-Conductual</li>
+                    <li>Técnica TAC</li>
+                    <li>Tratamientos</li>
+                    <li>Terapia Grupal</li>
+                    <li>Terapia Individual</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="traumatologia-fisioterapia">
+            <img src="traumatologia-fisioterapia.jpg" alt="Traumatología - Fisioterapia">
+            <div>
+                <h2>Traumatología - Fisioterapia</h2>
+                <ul>
+                    <li>Consulta Externa</li>
+                    <li>Tratamiento de lesiones</li>
+                    <li>Rehabilitación física</li>
+                    <li>Ejercicios terapéuticos</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Servicios Médicos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

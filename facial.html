@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>Zonamedik - Estética Facial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #008dc7;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            color: #008dc7;
+            margin-bottom: 10px;
+        }
+        section .visual{
+            flex: 0 0 45%; /* La imagen ocupa el 45% del ancho del contenedor */
+            margin-left: 20px; /* Espacio entre el texto y la imagen */
+	    }
+
+        section .visual img{
+            width: 100%;
+            height: auto;
+            border-radius: 2em;
+            object-fit: cover;
+            object-position: center;
+            aspect-ratio: 16/9;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        ul li::before {
+            content: "\2022";
+            color: #004d99;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .btn-wsp{
+			position: fixed;
+			width: 55px;
+			height: 55px;
+			line-height: 55px;
+			bottom: 30px;
+			right: 30px;
+			background: #0df053;;
+			color:#fff;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 30px;
+			box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+			z-index: 100;
+		}
+        .btn-wsp:hover{
+			text-decoration: none;
+			color: #0df053;
+			background: #fff;
+		}
+    </style>
+</head>
+<body>
+    <a href="https://api.whatsapp.com/send?phone=593998800858" class="btn-wsp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <header>
+        <h1>Estética Facial</h1>
+    </header>
+
+    <div class="container">
+        <section id="limpieza-facial">
+            <h2>Limpieza Facial Profunda</h2>
+            <p><strong></strong> Elimina impurezas de la piel para prevenir acné, arrugas y pérdida de brillo.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Previene imperfecciones</li>
+                <li>Hidrata</li>
+                <li>Da brillo</li>
+                <li>Mejora textura</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Exfoliación</li>
+                <li>Microdermoabrasión</li>
+                <li>Extracción de comedones</li>
+                <li>Aplicación de mascarilla y crema</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/hidratacion.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="hidratacion-colageno-led">
+            <h2>Hidratación Facial con Velo de Colágeno y Elastina y Terapia LED</h2>
+            <p><strong></strong> Usa una mascarilla de colágeno y terapia LED para regenerar y suavizar la piel.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Rehidrata</li>
+                <li>Estimula regeneración celular</li>
+                <li>Atenúa arrugas</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Exfoliación</li>
+                <li>Velo de colágeno</li>
+                <li>Terapia LED</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/velo.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="hidratacion-profunda">
+            <h2>Hidratación Facial Profunda</h2>
+            <p><strong></strong> Usa sérum y mascarillas para una hidratación profunda.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Mejora firmeza</li>
+                <li>Luminosidad</li>
+                <li>Reduce arrugas</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Sérum</li>
+                <li>Electroporador</li>
+                <li>Terapia LED</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/electropoaldor.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="crioterapia">
+            <h2>Crioterapia</h2>
+            <p><strong></strong> Aplica frío intenso para estimular la circulación y producción de colágeno.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Previene acné</li>
+                <li>Manchas</li>
+                <li>Arrugas</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Aplicación de gel frío</li>
+                <li>Terapia LED</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/crioterapia.png" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="tratamiento-manchas">
+            <h2>Tratamiento de Manchas</h2>
+            <p><strong></strong> Usa láser y/o peeling químico para reducir manchas en la piel.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Atenúa manchas</li>
+                <li>Estimula colágeno</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Láser o peeling</li>
+                <li>Mascarilla</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/laser.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="acne-activo">
+            <h2>Acné Activo</h2>
+            <p><strong></strong> Combina IPL con otros tratamientos para eliminar bacterias del acné.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Disminuye acné</li>
+                <li>Previene secuelas</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Limpieza profunda</li>
+                <li>IPL</li>
+                <li>Mascarilla bactericida</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/acneActivo.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="cicatrices-acne">
+            <h2>Cicatrices de Acné</h2>
+            <p><strong></strong> Usa Picoláser y Dermapen para mejorar cicatrices.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Atenúa cicatrices</li>
+                <li>Mejora la textura de la piel</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Exfoliación</li>
+                <li>Dermapen o Picoláser</li>
+                <li>Mascarilla</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/dermapen.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="afinamiento-poros">
+            <h2>Afinamiento de Poros</h2>
+            <p><strong></strong> Usa técnicas para reducir poros y mejorar textura de la piel.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Atenúa imperfecciones</li>
+                <li>Mejora la textura</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Exfoliación</li>
+                <li>Dermapen o Picoláser</li>
+                <li>Mascarilla</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/afinamientoPoros.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="ojeras-pigmentadas">
+            <h2>Ojeras Pigmentadas</h2>
+            <p><strong></strong> Utiliza carboxiterapia para mejorar la circulación y aclarar ojeras.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Aclara</li>
+                <li>Tonifica la piel de la ojera</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Carboxiterapia</li>
+                <li>Cuidados de la piel</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/ojerasPig.png" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="drenaje-linfatico">
+            <h2>Drenaje Linfático Manual</h2>
+            <p><strong></strong> Estimula el sistema linfático para eliminar toxinas.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Mejora circulación</li>
+                <li>Reduce inflamaciones</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Técnicas de drenaje linfático manual</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/drenajeLinfatico.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="aclaramiento-facial">
+            <h2>Aclaramiento Facial</h2>
+            <p><strong></strong> Usa varias técnicas para eliminar células muertas y manchas superficiales.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Aclara el rostro</li>
+                <li>Mejora la regeneración de la piel</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Dermaplaning</li>
+                <li>Hollywood peel</li>
+                <li>Terapia LED</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/terapiaLED.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="conoterapia">
+            <h2>Conoterapia</h2>
+            <p><strong></strong> Utiliza conos de cera para limpiar los oídos y mejorar la audición.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Limpia los oídos</li>
+                <li>Mejora la respiración</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Extracción de cera con conos de cera</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/conoterapia.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="auriculoterapia">
+            <h2>Auriculoterapia</h2>
+            <p><strong></strong> Usa parches con semillas para ayudar con sobrepeso y ansiedad.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Reduce apetito</li>
+                <li>Combate ansiedad</li>
+                <li>Retención de líquidos</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Aplicación de parches en puntos específicos</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/auriculoterapia2.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="hollywood-peel">
+            <h2>Hollywood Peel</h2>
+            <p><strong></strong> Combina crema de carbono con láser para exfoliar y rejuvenecer la piel.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Mejora la textura de la piel</li>
+                <li>Reduce arrugas y manchas</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Exfoliación</li>
+                <li>Terapia LED</li>
+                <li>Aplicación de crema de carbono</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/hollywoodPeel.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="oroterapia">
+            <h2>Oroterapia</h2>
+            <p><strong></strong> Usa polvo de oro para proteger y regenerar la piel.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Aporta luminosidad</li>
+                <li>Flexibilidad</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Scrub</li>
+                <li>Sérum</li>
+                <li>Mascarilla de oro</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/oroterapia2.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="flacidez-facial">
+            <h2>Flacidez Facial</h2>
+            <p><strong></strong> Combina radiofrecuencia, Dermapen, y plasma rico en plaquetas para reducir flacidez.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Mejora la firmeza</li>
+                <li>Reduce arrugas</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Radiofrecuencia</li>
+                <li>Dermapen</li>
+                <li>Mascarilla tensora</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/flacidezFacial.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="lipopapada-enzimatica">
+            <h2>Lipopapada Enzimática</h2>
+            <p><strong></strong> Usa enzimas y radiofrecuencia para disolver grasa y reafirmar la piel.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Suaviza la piel</li>
+                <li>Elimina grasa localizada</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Enzimas lipolíticas</li>
+                <li>Radiofrecuencia</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/papada.jpg" alt="" class="fit">
+			</div>
+        </section>
+
+        <section id="plasma-rico">
+            <h2>Plasma Rico en Plaquetas</h2>
+            <p><strong></strong> Inyecta plasma del propio paciente para regenerar la piel y reducir arrugas.</p>
+            <h3>Beneficios:</h3>
+            <ul>
+                <li>Mejora firmeza</li>
+                <li>Tersura</li>
+                <li>Reduce arrugas</li>
+            </ul>
+            <h3>Procedimiento:</h3>
+            <ul>
+                <li>Extracción de plasma</li>
+                <li>Exfoliación</li>
+                <li>Aplicación de PRP</li>
+            </ul>
+            <div class="visual">
+				<img src="images/facial/plama.jpg" alt="" class="fit">
+			</div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ZonaMedik. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
